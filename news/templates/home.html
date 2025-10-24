@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+<h1>Последние новости</h1>
+{% for article in articles %}
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.content|truncatewords:30 }}</p>
+{% endfor %}
+{% endblock %}

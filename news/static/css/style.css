@@ -1,0 +1,1035 @@
+/* Общий стиль шапки */
+        .main-header {
+            background: #ffffff;
+            border-bottom: 2px solid #e0e0e0;
+            padding: 10px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* Логотип */
+        .logo-block {
+            text-align: left;
+            margin-right: 40px; /* добавлен отступ справа */
+        }
+        .site-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+        }
+        .site-logo span {
+            color: #0066cc;
+        }
+        .site-subtitle {
+            font-size: 12px;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        /* Контейнер для меню и логотипа */
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 50px; /* расстояние между логотипом и меню */
+        }
+
+        /* Навигация */
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            padding: 8px 10px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #0066cc;
+        }
+
+        /* Подменю */
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            list-style: none;
+            padding: 10px 0;
+            min-width: 210px;
+            z-index: 1000;
+        }
+
+        .navbar ul li ul li a {
+            padding: 10px 15px;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .navbar ul li ul li a:hover {
+            background: #f5f5f5;
+            color: #0066cc;
+        }
+
+        /* Показываем подменю при наведении */
+        .navbar ul li:hover > ul {
+            display: block;
+        }
+
+        /* Язык справа */
+        .header-lang {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .header-lang a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .header-lang a.active {
+            background: #0066cc;
+            color: white;
+        }
+
+        .header-lang a:hover {
+            background: #e0e0e0;
+        }
+
+        .sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 8px 40px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.sub-left, .sub-center, .sub-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Поиск */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+.weather {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.weather-main {
+    color: #333;
+    font-size: 15px;
+}
+
+.weather .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.weather:hover .dropdown {
+    display: block;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.weather .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.weather .dropdown ul li {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.weather .dropdown ul li:hover {
+    background: #f0f0f0;
+}
+
+.weather .dropdown ul li span {
+    font-weight: 600;
+    color: #0073e6;
+}
+
+/* Плавное появление */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.weather .dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 3px 0;
+}
+
+.weather .dropdown a:hover {
+    color: #007bff;
+}
+
+/* Курсы валют */
+.currency span {
+    margin-right: 15px;
+}
+
+/* Соцсети */
+.socials a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+}
+
+.news-section {
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+  gap: 20px;
+}
+
+/* Левая часть */
+.news-left {
+  display: grid;
+  grid-template-areas:
+    "main small"
+    "row row";
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Большая новость */
+.news-main {
+  grid-area: main;
+  position: relative;
+}
+
+.news-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.news-main .news-text {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Две маленькие сверху */
+.news-small-top {
+  grid-area: small;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-small img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.news-small p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #222;
+}
+
+/* Три внизу */
+.news-row {
+  grid-area: row;
+  display: flex;
+  gap: 10px;
+}
+
+.news-item {
+  flex: 1;
+  text-align: center;
+}
+
+.news-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Правая колонка */
+.news-right {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fafafa;
+  height: fit-content;
+}
+
+.news-right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 6px;
+}
+
+.news-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-right ul li {
+  margin: 10px 0;
+}
+
+.news-right ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.news-right ul li a:hover {
+  color: #0073e6;
+}
+.top-news-calendar {
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.top-news-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* ТОП 3 */
+.top-news h3 {
+  font-size: 20px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.top-news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.top-news-item {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.top-news-item img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.top-news-text h4 {
+  margin: 0;
+}
+
+.top-news-text a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.top-news-text a:hover {
+  color: #0073e6;
+}
+
+/* Календарь */
+.calendar-block {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fafafa;
+  height: fit-content;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  background: #005bb5;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  text-align: center;
+  padding: 5px;
+}
+
+.calendar td {
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.calendar td.today {
+  background: #0073e6;
+  color: white;
+  font-weight: bold;
+}
+.media-telegram {
+  background: #f9f9f9;
+  padding: 40px 0;
+}
+
+.media-telegram .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.media-gallery, .telegram-block {
+  flex: 1 1 48%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.media-gallery h2, .telegram-block h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.btn-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #0078c2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-more:hover {
+  text-decoration: underline;
+}
+
+.telegram-frame iframe {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.virtual-tour {
+  background: linear-gradient(120deg, #005d8f, #0077b6);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.virtual-tour .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tour-content {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.tour-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.tour-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn-tour {
+  display: inline-block;
+  background: #fff;
+  color: #005d8f;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-tour:hover {
+  background: #005d8f;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.tour-preview {
+  flex: 1 1 40%;
+}
+
+.tour-preview img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.tour-preview img:hover {
+  transform: scale(1.03);
+}
+/* FOOTER */
+.site-footer {
+  background: #0a1a2f;
+  color: #ccc;
+  padding: 40px 0;
+  font-size: 15px;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00b4d8;
+}
+
+.footer-text p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.footer-text .license {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Кнопка "Наверх" */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#backToTop:hover {
+  background: #00b4d8;
+  transform: scale(1.1);
+}
+.page-title {
+    font-size: 28px;
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.page-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;           /* расстояние между датой и временем */
+    color: #555;          /* основной цвет текста */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.page-meta i {
+    color: #ff6600;       /* цвет иконок можно менять */
+    margin-right: 5px;    /* расстояние между иконкой и текстом */
+}
+
+.page-date, .page-time {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Если захочешь добавить иконки, можно через <i> и Font Awesome */
+.page-date i {
+    color: #aaa;
+}
+
+.page-image {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.no-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #999;
+    background: #f8f8f8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.page-content {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Для гармонии: отступ между картинкой и текстом */
+.page-image + .divider {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.feedback-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #e65c00;
+}
+.team-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.team-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    width: 220px; /* фиксированная ширина для карточки */
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    width: 180px;       /* фиксированный размер фото */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-position {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.member-bio {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+.virtual-tour-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.virtual-tour-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.tour-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tour-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.tour-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.tour-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.tour-description {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tour-video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+.gallery-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.gallery-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.gallery-item {
+    min-width: 300px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,102,0,0.8);
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.gallery-btn:hover {
+    background-color: #e65c00;
+}
+
+.gallery-btn.prev {
+    left: -25px;
+}
+
+.gallery-btn.next {
+    right: -25px;
+}
+.news-right {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.news-right h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #222;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.news-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-right li {
+  margin-bottom: 12px;
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 8px;
+}
+
+.news-right li:last-child {
+  border-bottom: none;
+}
+
+.news-right a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: 500;
+}
+
+.news-right a:hover {
+  color: #003366;
+}
+
+.news-date {
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Кнопка "Ещё" */
+.news-more {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn-more {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #005bb5;
+}

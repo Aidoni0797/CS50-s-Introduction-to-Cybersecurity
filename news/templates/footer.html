@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="o-redakcii/">О редакции</a>
+      <a href="feedback/">Обратная связь</a>
+      <a href="collegia/">Наш коллектив</a>
+    </div>
+
+    <div class="footer-text">
+      <p>
+        Перепечатка материалов возможна только с письменного разрешения редакции. <br>
+        При цитировании требуется прямая гиперссылка на соответствующие материалы.
+      </p>
+      <p class="license">
+        ©2025 0110.kz
+        <span>(23.10.2025 жылы)</span>
+      </p>
+    </div>
+
+    <button id="backToTop" title="Наверх">↑</button>
+  </div>
+</footer>
+
+<script>
+  // Кнопка "Наверх"
+  const btn = document.getElementById("backToTop");
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  btn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>

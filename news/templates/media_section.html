@@ -1,0 +1,17 @@
+<section class="media-telegram">
+  <div class="container">
+    <div class="media-gallery">
+      <h2>📸 Медиагалерея</h2>
+      <div class="gallery-grid">
+        {% for img in images %}
+        <div class="gallery-item">
+          <img src="{{ img.image.url }}" alt="{{ img.title }}">
+        </div>
+        {% empty %}
+        <p>Картинки ещё не загружены</p>
+        {% endfor %}
+      </div>
+      <a href="{% url 'gallery' %}" class="btn-more">Все материалы →</a>
+    </div>
+  </div>
+</section>

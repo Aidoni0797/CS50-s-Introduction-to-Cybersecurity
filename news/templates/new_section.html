@@ -1,0 +1,85 @@
+{% load static %}
+<section class="news-section">
+  <div class="news-container">
+
+    <!-- Левая колонка с новостями -->
+    <div class="news-left">
+
+      {% if main_news %}
+      <!-- Большая новость -->
+      <div class="news-main">
+        <a href="{% url 'news_detail' slug=main_news.slug %}">
+          {% if main_news.image %}
+            <img src="{{ main_news.image.url }}" alt="{{ main_news.title }}">
+          {% endif %}
+          <div class="news-text">
+            <h2>{{ main_news.title }}</h2>
+            <p>{{ main_news.content|truncatewords:20 }}</p>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+
+      {% if small_top_news %}
+      <!-- Две маленькие новости справа от большой -->
+      <div class="news-small-top">
+        {% for news in small_top_news %}
+        <div class="news-small">
+          <a href="{% url 'news_detail' slug=news.slug %}">
+            {% if news.image %}
+              <img src="{{ news.image.url }}" alt="{{ news.title }}">
+            {% endif %}
+            <p>{{ news.title|truncatewords:8 }}</p>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if bottom_news %}
+      <!-- Три маленькие новости внизу -->
+      <div class="news-row">
+        {% for news in bottom_news %}
+        <div class="news-item">
+          <a href="{% url 'news_detail' slug=news.slug %}">
+            {% if news.image %}
+              <img src="{{ news.image.url }}" alt="{{ news.title }}">
+            {% endif %}
+            <p>{{ news.title|truncatewords:8 }}</p>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <!-- Кнопка "Еще новости" -->
+      <div class="text-center mt-4">
+        <a href="{% url 'news_list' %}" class="btn-more">Еще новости →</a>
+      </div>
+
+    </div>
+
+    <!-- Правая колонка: последние новости -->
+    <div class="news-right">
+      <h3>📰 Последние новости</h3>
+      <ul>
+        {% for item in latest_news %}
+          <li>
+            <a href="{% url 'news_detail' slug=item.slug %}">
+              {{ item.title|truncatechars:60 }}
+            </a>
+            <span class="news-date">{{ item.created_at|date:"d.m.Y H:i" }}</span>
+          </li>
+        {% empty %}
+          <li>Новостей пока нет.</li>
+        {% endfor %}
+      </ul>
+
+      <!-- Кнопка "Ещё" -->
+      <div class="news-more">
+        <a href="{% url 'news_list' %}" class="btn-more">Ещё →</a>
+      </div>
+    </div>
+
+  </div>
+</section>

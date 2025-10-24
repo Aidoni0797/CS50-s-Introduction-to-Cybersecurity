@@ -1,0 +1,131 @@
+{% load static %}
+{% include 'sub_header.html' %}
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ABAI AQPARAT{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+<header class="main-header">
+    <div class="header-container">
+        <div class="nav-wrapper">
+            <div class="logo-block">
+                <h1 class="site-logo">0110.KZ <span>- ABAI AQPARAT</span></h1>
+                <p class="site-subtitle">өңіріміздің басты ақпарат алаңы</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">ОБЛАСТЬ АБАЙ</a>
+                        <ul>
+                            <li><a href="#">О регионе</a></li>
+                            <li><a href="#">Виртуальный 3D тур</a></li>
+                            <li><a href="#">Сакральные места</a></li>
+                            <li><a href="#">Памятники</a></li>
+                            <li><a href="#">Культурные места</a></li>
+                            <li><a href="#">Справочник</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">НОВОСТИ</a>
+                        <ul>
+                            <li><a href="/news/">Новости региона</a></li>
+                            <li><a href="#">Новости Казахстана</a></li>
+                            <li><a href="#">Мировые новости</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">СТАТЬИ</a>
+                        <ul>
+                            <li><a href="#">Интервью</a></li>
+                            <li><a href="#">Расследования</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">РУБРИКИ</a>
+                        <ul>
+                            <li><a href="#">Елимай</a></li>
+                            <li><a href="#">Рейтинг акимов</a></li>
+                            <li><a href="#">Ретро Семей</a></li>
+                            <li><a href="#">PRO police</a></li>
+                            <li><a href="#">Крылатые выражения</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">РЕГИОНЫ</a>
+                        <ul>
+                            <li><a href="#">Семей</a></li>
+                            <li><a href="#">Абай</a></li>
+                            <li><a href="#">Аксуат</a></li>
+                            <li><a href="#">Аягоз</a></li>
+                            <li><a href="#">Бескарагай</a></li>
+                            <li><a href="#">Бородулиха</a></li>
+                            <li><a href="#">Жарма</a></li>
+                            <li><a href="#">Кокпекты</a></li>
+                            <li><a href="#">Курчатов</a></li>
+                            <li><a href="#">Урджар</a></li>
+                            <li><a href="#">Маканчи</a></li>
+                            <li><a href="#">Жанасемей</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">МЕДИАГАЛЕРЕЯ</a>
+                        <ul>
+                            <li><a href="#">Ахмет Чукеев</a></li>
+                            <li><a href="#">“414kz”</a></li>
+                            <li><a href="#">Николай Мовчан</a></li>
+                            <li><a href="#">Светлана Артюшина</a></li>
+                            <li><a href="#">Руслан Шакабаев</a></li>
+                            <li><a href="#">Андрей Куряшкин</a></li>
+                            <li><a href="#">Мухтар Сапаров</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-lang">
+            <a href="/">KZ</a>
+            <a href="/ru/" class="active">RU</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    {% load static %}
+<section class="news-section">
+  <div class="news-container">
+
+    {% block content %}
+    <div class="feedback-container">
+        <h2>Обратная связь</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-submit">Отправить</button>
+        </form>
+    </div>
+    {% endblock %}
+
+    <!-- Правая колонка: последние новости -->
+    <div class="news-right">
+      <h3>Последние новости</h3>
+      <ul>
+        <li><a href="#">Абай облысында ауа райы өзгереді</a></li>
+        <li><a href="#">Семейде жаңа мектеп ашылды</a></li>
+        <li><a href="#">Қазақстан экономикасы өсуде</a></li>
+        <li><a href="#">Аягөзде мәдени шара өтті</a></li>
+        <li><a href="#">Курчатовта ғылыми форум өтті</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+</main>
+</html>
+

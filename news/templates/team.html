@@ -117,17 +117,27 @@
         </div>
     </div>
     {% endblock %}
-    <!-- Правая колонка: последние новости -->
-    <div class="news-right">
-      <h3>Последние новости</h3>
-      <ul>
-        <li><a href="#">Абай облысында ауа райы өзгереді</a></li>
-        <li><a href="#">Семейде жаңа мектеп ашылды</a></li>
-        <li><a href="#">Қазақстан экономикасы өсуде</a></li>
-        <li><a href="#">Аягөзде мәдени шара өтті</a></li>
-        <li><a href="#">Курчатовта ғылыми форум өтті</a></li>
-      </ul>
-    </div>
+     <!-- Правая колонка: последние новости -->
+        <div class="news-right">
+          <h3>📰 Последние новости</h3>
+          <ul>
+            {% for item in latest_news %}
+              <li>
+                <a href="{% url 'news_detail' slug=item.slug %}">
+                  {{ item.title|truncatechars:60 }}
+                </a>
+                <span class="news-date">{{ item.created_at|date:"d.m.Y H:i" }}</span>
+              </li>
+            {% empty %}
+              <li>Новостей пока нет.</li>
+            {% endfor %}
+          </ul>
+    
+          <!-- Кнопка "Ещё" -->
+          <div class="news-more">
+            <a href="{% url 'news_list' %}" class="btn-more">Ещё →</a>
+          </div>
+        </div>
 
   </div>
 </section>

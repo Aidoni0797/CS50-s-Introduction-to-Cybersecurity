@@ -101,4 +101,26 @@ I could come up with, so to speak, would be 0000. And the largest password I cou
 think OK, well, that's, obviously 9,999 possiblities. But not quite because if you include 0000, that's  the 10,000th possibility.
 So indeed there's 10,000 possible passwords if we're using four digits specifically.
 
-So how do we actually think about that more generally, especially so that we can now figure out them
+So how do we actually think about that more generally, especially so that we can now figure out the math for larger
+passwords as well? Well, if you've got 0 through 9 as the first possible digit, and 0 through 9 as the next, and 0 through 9 is
+the third, and 0 through 9 as the fourth, you have 10 possibilities times 10 possibilities times 10 times 10. This,
+of course, if we do it out more mathematically is 10 to the fourth power, the exponent being 4. And that, of course,
+gives us 10,000 as well.
+
+So that might be the more mathematical way of approaching it, versus just the more intuitive, that 0000 can go all way up to
+9999. Now again, a question for the group, how long do you think it might take for an adversary or a hacker to get into my
+device, for instance, my phone, if I  do have a four-digit password? If I've got a four-digit password, this means there
+might have to try as many as 10,000 possibilities because in the easiest case, sure, they get lucky, and my password is still
+the default 0000. But in the worst case, I chose 9999,  and they don't get to that until the very and of their attempts.
+
+Or maybe I choose something there in between. I'm seeing 10 seconds, less than a second, milliseconds, 10 seconds a day, 4 hours.
+So the responses are all over the place. So how can we go about actually measuring this or estimating this? Well, let me
+propose this. I'm going to go over to my computer here. And even if you've never written any code before, let's go ahead
+and write some code together here.
+
+I'm going to go ahead and open a program called VS Code, Visual Studio Code, which is a free program that we use in CS50
+more generally that allows me to write code on my Mac or PC or really any internet-based device. And I can actually write
+code, and not only write it, but run it. And I'm going to write code, in this case, in a language called Python. And this
+is just a very popular language, but I could use any of a dozen or more different programmong languages.
+
+And the goal here is not to learn Python--, for that, we have whole other classes-- but to just demonstrate what an 

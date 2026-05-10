@@ -87,4 +87,18 @@ like to chime in here inthe chat, how many characters or digits, in particular, 
 I would conjecture that very often when I set up a phone, I'm only asked for a passcode, a numeric password. of four digits 
 alone.
 
-Now, if you have a 
+Now, if you have a four-digit passcode or password more generally, how secure is that? And how do we even go about 
+thinking about how secure that password is? Well, I would propose that we could start to measure not even using fancy
+math, but just some basic heuristics, we could measure the security of a password that has just four digits by considering 
+well, how many possible four-digit passcodes are there?
+
+So perhaps if you'd like to chime in here in the chat, how many possible passwords are there if they're all digits 0 through
+9, decimal digits, and if you only have four of them? How many possibilities are there? I'm seeing 1,000. I'm seeing 10.000.
+I'm seeing 9,999. And I'm seeing a whole range. And I think a lot of you have the  answer is spot on. It's 10,000. It's 10,000.
+
+Why? Well if we just think about  this numerically, if I've got four decimal digits, 0 through 9, well, the smallest password
+I could come up with, so to speak, would be 0000. And the largest password I could come  up with would be 99999. Now, you might 
+think OK, well, that's, obviously 9,999 possiblities. But not quite because if you include 0000, that's  the 10,000th possibility.
+So indeed there's 10,000 possible passwords if we're using four digits specifically.
+
+So how do we actually think about that more generally, especially so that we can now figure out them

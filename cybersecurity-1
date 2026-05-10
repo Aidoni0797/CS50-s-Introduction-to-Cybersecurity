@@ -157,4 +157,8 @@ to do, bury inside of this code now is print out the value of i, j, k and l so t
 So if you assume that I've connected my phone to this laptop, ideally, then, we'll have an estimation of how long it might
 take until we actually have cracked into he device. So let's go ahead and do this. I'm going to open up a separate window
 on my screen here called a terminal window. And I'm going to go ahead and run Python of crack.py. So in just a moment
-we're
+we're going to see is it going to take a few minutes, a few milliseconds, a day, four hours, or-- here we go. 1,2,3,go.
+
+So those of you who estimated just a few milliseconds were spot on. So what's the takeaway here? Well, apparently using
+a four-digit password is not very secure at all because look how quickly I, the adversary, the hacker in the story, was able
+to get into your phone. And in fact, I could probably unplug it at that point because I've gotten whatever

@@ -161,4 +161,11 @@ we're going to see is it going to take a few minutes, a few milliseconds, a day,
 
 So those of you who estimated just a few milliseconds were spot on. So what's the takeaway here? Well, apparently using
 a four-digit password is not very secure at all because look how quickly I, the adversary, the hacker in the story, was able
-to get into your phone. And in fact, I could probably unplug it at that point because I've gotten whatever
+to get into your phone. And in fact, I could probably unplug it at that point because I've gotten whatever data I care
+about off your phone. And you might not be none the wiser.
+
+So how can we go about improving upon this system? Well, let me propose that instead of using a four-digit passcode,
+let's use four letters instead. And we'll use English because that's what I speak well. and in English, we have 26 letters
+of the alphabet, A through Z.
+
+But you know what?

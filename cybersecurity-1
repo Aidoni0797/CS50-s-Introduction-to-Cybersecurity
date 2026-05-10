@@ -123,4 +123,38 @@ more generally that allows me to write code on my Mac or PC or really any intern
 code, and not only write it, but run it. And I'm going to write code, in this case, in a language called Python. And this
 is just a very popular language, but I could use any of a dozen or more different programmong languages.
 
-And the goal here is not to learn Python--, for that, we have whole other classes-- but to just demonstrate what an 
+And the goal here is not to learn Python--, for that, we have whole other classes-- but to just demonstrate what an adversary,
+what a hacker need to do if they want to get into, for instance, your iPhone or Android device or anything that has just 
+a four-digit password. Now, my presumotion here for demonstration sake is that I'm going to go ahead and write code that just 
+prints all possible passwords on the screen. But you could imagine if I had a USB cable or maybe a lighing cable, could
+connect this phone to this laptop, especially if it's your phone that I just swiped from a table, could quickly plug it into
+my computer here, run the code that I'm about to write, and maybe automatically send all 10,000 possibilities to your device
+before you even realize the phone is gone.
+
+Now, here's how I'm going to do this. I'm going to go ahead, and in a text file called crack.py, where crack is actually a term
+of art. It just means to figure out what a password is, to brute force your way in. I'm going to go ahead and from library called
+string. I'm going to go ahead and import digits. Now, this is a very easy way of just giving me accessto the numbers 0 through 9.
+I could obviously type them all out on my keyboard. This is a little faster because this gives me like a list of the numbers I care
+about.
+
+Now, there's a bunch of different ways I can write this code. But what I really want to do intuitively is try all possible
+digits for the first value, try all possible digits for the second, then for the third, then for the fourth. So one way of 
+doing this might be as follows. I'm going to use a keyword in Python called for, which just means do something for as long as 
+I want you to. And then I'm going to give myself a variable, like in math, just so I can use something to keep track
+of each number.
+
+And I'm going to use a default value of i for integer. And then I'm going to go ahead and say that for each  value i in
+those 10 digits, I want to go ahead and do the following. Well, for each of those i digits, for the first value, I want
+to do for j in digits as well, And then for each value for my third placeholder, I might do something like for k in digits.
+And then lastly, I might do for l in digits.
+
+So this is admittedly not the best design. And those of you who've programmed before are probably cringing that I have this 
+indentation, indentation, indentation. But it's a simple way of demonstrating, especially for those unfamiliar with programming,
+how we can try all possible first digits, all possible second, all possible third, all possible fourth. And all I'm going
+to do, bury inside of this code now is print out the value of i, j, k and l so that iteratively, we should see on the screen
+0000 and then all the way up to 9999.
+
+So if you assume that I've connected my phone to this laptop, ideally, then, we'll have an estimation of how long it might
+take until we actually have cracked into he device. So let's go ahead and do this. I'm going to open up a separate window
+on my screen here called a terminal window. And I'm going to go ahead and run Python of crack.py. So in just a moment
+we're

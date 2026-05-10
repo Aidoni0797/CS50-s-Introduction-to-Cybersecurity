@@ -35,4 +35,8 @@ of course, lets you in through that locked door, and then you have access to the
 someone else gets that key, of course, they, too, can let themselves into that system or into that same building.
 
 So let's consider now in the digital world, though, what some of the building blocks are of security so that we can focus
-exactly what those
+exactly what those threats and what those defenses are. So first, allow me to propose that we think about the security of
+our accounts in terms of authentication. So authentication refers to this process, digitally, of proving who you are, that I,
+for instance, am David.
+
+But that alone isn't necessarily enough to keep a system secure because just I'm David doesn't necessarily mean I should

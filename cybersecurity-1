@@ -70,4 +70,21 @@ as your password, this word as your password, this word as your password and so 
 a pretty guessable password, one that is an actual world in a dictionary, they're going to get into your account much faster.
 
 But even if you and I are clever-- and odds are by this point in life you know that  you shouldn't just choose a simple
-English or some other language word, but rather you should probably have
+English or some other language word, but rather you should probably have some numbers, some letters, some punctuation,
+or the like-- you're still vulnerable, as am I, to what we would call a brute force attack. Brute force sort of evokes the memories
+of yesteryear where someone might have had a big branch of a tree using as a battering ram trying to get into the castles
+from past times. But brute force attacks in the digital world mean something anologusly, whereboy you're using software to
+digitally try all possible passwords.
+
+And so here, too, are you vulnerable because if your password is too short, even if it's random with letters, numbers,
+and symbols, odds are an adversary or a hacker that has enough time and enough technical savvy, they can just try every 
+possible password in the world. And eventually, they might very possible password in the world. And eventually, they might
+very well get into your system. So how do we go about defending against these kinds of attacks? Well, we use these
+passwords, but these passwords of course come in different forms.
+
+And it's  kind of a low bar that is set by default on a lot of devices still nowadays. For instance, on your phone if you'd
+like to chime in here inthe chat, how many characters or digits, in particular, are typically required of systems? Well, 
+I would conjecture that very often when I set up a phone, I'm only asked for a passcode, a numeric password. of four digits 
+alone.
+
+Now, if you have a 

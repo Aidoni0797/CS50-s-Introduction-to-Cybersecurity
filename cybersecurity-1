@@ -15,4 +15,24 @@ Watch LEcture - Submit Assigment
 And then  submit the course's final project.
 
 To submit the course's assigments and final project for feedback, be sure to create and edX account, if you haven't already.
-ask questions along the way 
+ask questions along the way via any of the course's communities.
+
+How to Teach this Course
+If you are a teacher, you are welcome to adopt or adapt these materials for your own course, per the license. Additionally,
+we encourage teachers to paticipate in the CS50 Educator Workshop to learn more about CS50's cirriculum, technology, and pedagogy.
+
+Week 0 Securing Accounts
+
+This is CS50's introduction to cybersecurity. My name is David Malan. And this week, let's focus on securing accounts.
+You and I David Malan. And this week, let's focus on securing accounts. You and I have so many accounts nowadays, be it for
+webstes or apps or the like. And we'll focus today on exactly what the threats are to all of those accounts but more importantly
+what some of the defenses are so that you can keep those accounts secure. But let's first consider what we mean by security 
+in the physical world, for instance.
+
+Whether you live in a home, an apartment, a dormitory or the like, odds are you have a ley that lets you into that building.
+Now, that key, of course, lets you in through that locked door, and then you have a key that lets you into that building. Now, that key, 
+of course, lets you in through that locked door, and then you have access to the entire habitat. But the catch is that if
+someone else gets that key, of course, they, too, can let themselves into that system or into that same building.
+
+So let's consider now in the digital world, though, what some of the building blocks are of security so that we can focus
+exactly what those

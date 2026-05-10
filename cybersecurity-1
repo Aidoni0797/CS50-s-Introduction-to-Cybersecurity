@@ -43,4 +43,31 @@ But that alone isn't necessarily enough to keep a system secure because just I'm
 have access to your entire home. Perhaps I should not have access at all. Perhaps I should just have access to your entire
 home. Perhaps I should not have access at all. Perhaps I should just have access to the entryway or some narrower form of 
 access. And so there's this related topic when it comes to the security of locations or systems known as authorization.
-So authorization speaks to whether or not you should have access to something, once you have proven that you are
+So authorization speaks to whether or not you should have access to something, once you have proven that you are, that
+I am David and that I should, in fact, have access to the door that I just walked through.
+
+Now, when it comes to our accounts in the digital wotld, we, of course, don't use physical keys, but very frequently
+nowadays we use sernames, which, of course, can be public. It might be a username like David. It might be a username like Malan.
+Or it might be more commonly, even an entire email address that presumably uniquely identifies you in the world.
+
+But even though that's public, the thing that you and I ideally keep private is, of course, our password. And nowadays,
+you and I must have  dozens, maybe even hundreds of passwords that are hopefully distinct and not reused across all of
+those different websites, but more on that in a moment. And so it's really this password that ultimately allows you to 
+authenticate yourself, demonstrate who you are because presumbly I am the only one in the world that knows, not only my
+username or email address, which all of us can know, but presumbly I'm the only one in the world that knows my username
+and this here password. And so the presumption is if I type in both of those values to some app or some app or some website
+that I must, in fact, be David Malan, in that case.
+
+Of course, it's not good enough to just have a password. You need to have a good password. Now, what do we mean by good password?
+Well, ideally, this password is not going to be in a dictionary, like, literally  a dictionary of English words or whatever
+your human language might be. Why? Well, there's this threat known as a dictionary attack.
+
+And by this I mean an adversary, a hacker that wants to get into your account, they could just start typing randomly
+to try to figure out what your password is. But they're a little smarter. They'll actually use a dictionary attack. 
+That is they'll open a physical book of words, or more likely they'll open a file on their computer caontaining a whole
+lot of actual English words or in some other human language, and then just one at a time, try this word as your password, this word
+as your password, this word as your password, this word as your password and so forth. Because if you and I have chosen
+a pretty guessable password, one that is an actual world in a dictionary, they're going to get into your account much faster.
+
+But even if you and I are clever-- and odds are by this point in life you know that  you shouldn't just choose a simple
+English or some other language word, but rather you should probably have

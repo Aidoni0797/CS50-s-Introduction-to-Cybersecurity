@@ -40,4 +40,7 @@ our accounts in terms of authentication. So authentication refers to this proces
 for instance, am David.
 
 But that alone isn't necessarily enough to keep a system secure because just I'm David doesn't necessarily mean I should
-have access to your entire home. Perhaps I should not have access at all. Perhaps I should just jave access 
+have access to your entire home. Perhaps I should not have access at all. Perhaps I should just have access to your entire
+home. Perhaps I should not have access at all. Perhaps I should just have access to the entryway or some narrower form of 
+access. And so there's this related topic when it comes to the security of locations or systems known as authorization.
+So authorization speaks to whether or not you should have access to something, once you have proven that you are

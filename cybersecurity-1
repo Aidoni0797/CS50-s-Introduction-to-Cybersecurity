@@ -40,3 +40,4 @@ our accounts in terms of authentication. So authentication refers to this proces
 for instance, am David.
 
 But that alone isn't necessarily enough to keep a system secure because just I'm David doesn't necessarily mean I should
+have access to your entire home. Perhaps I should not have access at all. Perhaps I should just jave access 
